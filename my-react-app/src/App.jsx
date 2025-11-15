@@ -1,6 +1,6 @@
 import Header  from "./component/Header.jsx"  
 import Footer from "./component/Footer.jsx"
-import Language from "./Language.jsx"
+import Language from "./component/Language.jsx"
 import Card from "./component/Card.jsx"
 import githubpic from "./assets/github.png"
 import images from "./assets/image.png"
