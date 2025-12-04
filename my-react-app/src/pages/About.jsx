@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './About.module.css'
-import profile from '../assets/image.png'
+import profile from '../assets/profile.png'
 
 function About(){
   return (
