@@ -11,7 +11,7 @@ import CardParent from "./component/CardParent.jsx"
 import About from './pages/About.jsx'
 import profilepic from "./assets/profile.png"
 import banner from "./assets/banner.jpg"
-import linkedinpic from "./assets/linkedinprofile.png"
+import linkedinpic from "./assets/Linkedinprofile.png"
 import githubpics from "./assets/githubprofile.png"
 
 function Home(){
