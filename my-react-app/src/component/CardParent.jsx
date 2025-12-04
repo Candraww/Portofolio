@@ -25,8 +25,10 @@ function CardParent(props) {
             </div>
                 
             <div className={styles.rightSide}>
+                
                 <div className={styles.rightCard}>
-                    <div className={styles.firstRcard}>
+                    
+                    <div className={styles.firstRcard} onClick={() => window.location.href = "https://www.linkedin.com/in/candra-wijaya-c2005/"}>
                         <img className={styles.rcardImage} src={props.limage} alt={props.ltitle} />
                                 
                         <div className={styles.rtxt}>
@@ -35,7 +37,7 @@ function CardParent(props) {
                         </div>    
                     </div>
 
-                    <div className={styles.secondRcard}>
+                    <div className={styles.secondRcard} onClick={() => window.location.href = "https://github.com/candraww"}>
                         <img className={styles.rcardImage} src={props.rimage} alt={props.rtitle} />
                                 
                         <div className={styles.rtxt}>
