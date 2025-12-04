@@ -1,23 +1,24 @@
+import styles from './Component.module.css'
+
 function Footer(){
     return(
-        <footer>
-            <h1>Contact</h1>
-            <ul>
-                <li><a href="linkedin.com">Linkedin</a></li>
-                <li><a href="https://www.instagram.com/candra_wijaya/">Instagram</a></li>
-                <li><a href="https://github.com/candrawijaya">Github</a></li>
-                <li><img src="src\assets\react.svg"></img>candra.wijaya.2010@ui.ac.id</li>
-
-            </ul>
-            <ul>
-                
-            </ul>
-            <p>Copyright &copy; {new Date().getFullYear()} Candra Wijaya All rights reserved.</p>
+        <footer className={styles.footer}>
+            <div className={styles.footerInner}>
+                <div className={styles.contactCol}>
+                    <h3 className={styles.sectionTitle}>Contact</h3>
+                    <ul className={styles.contactList}>
+                        <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/candra_wijaya/" target="_blank" rel="noreferrer">Instagram</a></li>
+                        <li><a href="https://github.com/candrawijaya" target="_blank" rel="noreferrer">GitHub</a></li>
+                        <li><img src="/src/assets/react.svg" alt="react logo" className={styles.footerIcon}/> candra.wijaya.2010@ui.ac.id</li>
+                    </ul>
+                </div>
+                <div className={styles.copyCol}>
+                    <p className={styles.copy}>Copyright © {new Date().getFullYear()} Candra Wijaya. All rights reserved.</p>
+                </div>
+            </div>
         </footer>
-
     )
-
-
 }
 
 export default Footer

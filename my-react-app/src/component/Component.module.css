@@ -1,178 +1,627 @@
- .card{
-   border: 1px solid hsl(0,0%,80%);
-   border-radius: 10px;
-   box-shadow: 5px 5px 5px hsl(0, 0%, 0.1);
-   margin: 10px;
-   text-align: left;
-   max-width: 250px;
-   background-image: url(./assets/image.png);
-   display: inline-block;
-   overflow: hidden;
 
-   
- }
-.cardImage{
-   width: 60%;
-   display: block;
-   margin: 0 auto; 
-   object-fit: cover;
+ .Header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  background: linear-gradient(90deg, #0f1723, #111827);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
-
- .cardTitle{
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: small;
-   margin: 0;
-   color: hsl(0, 0, 20%);
+.Header h1{
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
 }
-
-.cardText{
-   font-family: Arial, Helvetica, sans-serif ;
-   color: hsl(0, 0, 30%);
-   font-size: x-small;
-   margin: 0;
-}
-
-.txt{
-   background-color: black;
-   color: white;
-  padding: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-
-.cvBtn{
-   color: white;
-   background-color: hsl(0, 0%, 0%);
-   border: none;
-   border-radius: 5px;
-   padding: 5px 10px;
-   margin: 10px;
-}
-
-
-.homeCard {
-    display: flex;
-    background-color: #1D232A;
-    width: 100%;
-    height: 1000px;
-    gap: 10px;
-}
-
-.leftSide{
  
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    flex : 1;
-  
-}
-
-/* KIRI: 50% lebar */
-.leftCard {
-    height: 90%;
+   .Header{
     display: flex;
-    width: 90%;
-    border-radius: 8px;
-    background-color: #D9D9D9;
-    margin-left: 40px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    
-   
-    
-
-
-}
-
-.ptxt{
-  width: 290px; 
-  border-radius: 5px;
-    height: 310px; 
-    background-color: gray;
-    margin: 50px;
-    margin-bottom: 100px;
-    padding: 10px;
-    
-    box-sizing: border-box;
-    
-}
-
-.rightSide{
-  
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    flex : 1;
-}
-
-/* KANAN: 50% lebar, dibagi atas bawah */
-.rightCard {
-  height: 90%;
-    width: 90%;
-    border-radius: 8px;
-   
-    gap: 10%;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    background: linear-gradient(90deg, #0f1723, #111827);
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
 
-    
-    
-    
-    
+  .Header h1{
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+    letter-spacing: 0.4px;
+  }
+
+  .menu{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li{
+    margin: 0;
+  }
+
+  .menu a{
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color .15s, color .15s;
+  }
+
+  .menu a:hover{
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+  }
+
+  .Header hr{
+    display: none;
+  }
+  
+  
+   .card{
+    border: 1px solid hsl(0,0%,80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.12);
+    margin: 0; /* use grid gap for spacing so cards don't overflow */
+    text-align: left;
+    width: 100%;
+    background-image: url(./assets/image.png);
     display: flex;
     flex-direction: column;
-   
+    overflow: hidden;
+    box-sizing: border-box;
+   }
+    .cardImage{
+     width: 100%;
+     height: 140px;
+     display: block;
+     object-fit: cover;
+    }
 
-}
-.firstRcard{
-  height: 45%;
-  width: 85%;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
-  
-}
+   .cardTitle{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.4rem;
+     margin: 0 0 8px 0;
+     color: #06b6d4;
+  }
 
-.secondRcard{
-  height: 45%;
-  width: 85%;
-  border-radius: 5px;
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  
-  
-  
-}
+  .cardText{
+     font-family: Arial, Helvetica, sans-serif ;
+     color: #ccc;
+     font-size: 0.95rem;
+     margin: 0;
+     line-height: 1.5;
+  }
 
-.rcardImage{
-  background-color: #D9D9D9;
-  height: 60%;
+  .txt{
+     background-color: black;
+     color: white;
+    padding: 12px 14px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+
+  .cvBtn{
+    color: white;
+    background-color: #06b6d4;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: transform .12s, opacity .12s;
+  }
+
+  .cvBtn:hover{
+    transform: translateY(-1px);
+    opacity: 0.95;
+  }
+
+
+  .homeCard {
+    display: flex;
+    background-color: #0f1419;
+    width: 100%;
+    gap: 18px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: stretch;
+    min-height: 240px;
+  }
+
+  .leftSide{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex : 1;
+    padding-left:20px;
+    
+    
+
+  }
+
+  /* KIRI: 50% lebar */
+  .leftCard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1a2940 0%, #0f1419 100%);
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ptxt{
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: none;
+    font-size: 1rem;
+    z-index: 2;
+  }
+  .cardText{
+    padding:20px;
+  }
+
+  .photoOverlay{
+    position: relative;
+    margin: 16px auto 0 auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+    flex-shrink: 0;
+  }
+
+  .pcardImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+  }
+  .cardButton{
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    margin-top: 16px;
+    padding: 10px 16px;
+    background-color: #06b6d4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color .15s, transform .15s;
+    z-index: 2;
+  }
+
+  .rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex : 1;
+  }
+
+  /* KANAN: 50% lebar, dibagi atas bawah */
+  .rightCard {
+    width: 90%;
+    border-radius: 8px;
+    gap: 6%;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstRcard{
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    flex: 1;
+  }
+
+  .secondRcard{
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .rcardImage{
+    background-color: #D9D9D9;
+    height: 60%;
+  }
+
+  .rtxt{
+    height: 40%;
+    display: flex;
+    padding-left: 20px;
+    background-color: #13161B;
+    color: white;
+    flex-direction: column;
+  }
+  .rcardTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin: 0;
+    color: hsl(0, 0, 20%);
+  }
+  .rcardText{
+    font-family: Arial, Helvetica, sans-serif ;
+    color: hsl(0, 0, 30%);
+    font-size: x-small;
+    margin: 0;
+  }
+
+  /* Languages section */
+  .languageSection{
+    background: linear-gradient(180deg,#0f1723,#0b1220);
+    color: #e6eef6;
+    padding: 20px 24px;
+    border-radius: 8px;
+    width: 100%;
+    margin: 18px 0;
+    box-sizing: border-box;
+  }
+  .skillGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    align-items: start;
+  }
+  .skillCategory{
+    background: rgba(255,255,255,0.02);
+    padding: 12px;
+    border-radius: 8px;
+    min-height: 140px;
+  }
+  .skillHeading{
+    margin: 0 0 8px 0;
+    font-size: 0.95rem;
+    color: #e6eef6;
+  }
+  .skillItems{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .skillItem{
+    background: rgba(255,255,255,0.03);
+    color: #dbeafe;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .sectionTitle{
+    margin: 0 0 16px 0;
+    font-size: 1.2rem;
+    color: #f8fafc;
+    font-weight: 600;
+  }
+
+  /* Generic section divider to visually separate page sections */
+  .pageSection{
+    border-top: 1px solid rgba(6,182,212,0.15);
+    padding-top: 24px;
+    margin-top: 28px;
+    background: linear-gradient(180deg, rgba(6,182,212,0.03), transparent);
+    box-shadow: inset 0 1px 0 rgba(6,182,212,0.08);
+  }
+
+  /* Alternate section background (used to create a zebra effect) */
+  .pageSectionAlt{
+    border-top-color: rgba(6,182,212,0.12);
+    background: linear-gradient(180deg, rgba(6,182,212,0.05), rgba(6,182,212,0.02));
+  }
+  .langList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .langItem{
+    background: rgba(255,255,255,0.04);
+    color: #dbeafe;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  .footer{
+    background: linear-gradient(180deg, #0b1220, #07101a);
+    color: #d1d5db;
+    padding: 28px 20px;
+  }
+  .footerInner{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .contactCol{
+    min-width: 220px;
+  }
+  .contactList{
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .contactList a{
+    color: #9ca3af;
+    text-decoration: none;
+  }
+  .contactList a:hover{
+    color: #e6f2fb;
+  }
+  .footerIcon{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  .copy{
+    margin: 0;
+    color: #9aa4b2;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .homeCard {
+      flex-direction: column;
+      min-height: auto;
+      gap: 20px;
+    }
+
+    .leftSide, .rightSide {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .leftCard {
+      min-height: 300px;
+    }
+
+    .rightCard {
+      width: 100%;
+    }
+
+    .firstRcard, .secondRcard {
+      height: 160px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .Header {
+      padding: 14px 20px;
+    }
+
+    .Header h1 {
+      font-size: 1rem;
+    }
+
+    .menu {
+      gap: 10px;
+      font-size: 0.9rem;
+    }
+
+    .menu a {
+      padding: 6px 8px;
+      font-size: 0.85rem;
+    }
+
+    .cvBtn {
+      padding: 6px 10px;
+      font-size: 0.85rem;
+    }
+
+    .homeCard {
+      padding: 16px;
+      gap: 16px;
+    }
+
+    .leftCard {
+      min-height: 280px;
+      padding: 32px;
+    }
+
+    .ptxt {
+      font-size: 0.95rem;
+    }
+
+    .photoOverlay {
+      width: 150px;
+      height: 150px;
+      margin: 12px auto 0 auto;
+      position: relative;
+    }
+
+    .rightCard {
+      gap: 8%;
+    }
+
+    .firstRcard, .secondRcard {
+      height: 140px;
+    }
+
+    .cardImage {
+      height: 120px;
+    }
+
+    .sectionTitle {
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    .pageSection {
+      margin-top: 20px;
+      padding-top: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .Header {
+      padding: 12px 16px;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .Header h1 {
+      font-size: 0.95rem;
+    }
+
+    .menu {
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .menu a {
+      padding: 5px 8px;
+      font-size: 0.8rem;
+    }
+
+    .cvBtn {
+      padding: 5px 8px;
+      font-size: 0.8rem;
+      margin-left: 4px;
+    }
+
+    .homeCard {
+      padding: 12px;
+      gap: 12px;
+    }
+
+    .leftCard {
+      min-height: 240px;
+      padding: 24px;
+    }
+
+    .ptxt {
+      font-size: 0.85rem;
+    }
+
+    .photoOverlay {
+      width: 120px;
+      height: 120px;
+      margin: 10px auto 0 auto;
+      position: relative;
+    }
+
+    .firstRcard, .secondRcard {
+      height: 120px;
+    }
+
+    .rcardImage {
+      height: 65%;
+    }
+
+    .rtxt {
+      height: 35%;
+      padding-left: 12px;
+    }
+
+    .rcardTitle {
+      font-size: x-small;
+    }
+
+    .rcardText {
+      font-size: 0.7rem;
+    }
+
+    .cardImage {
+      height: 100px;
+    }
+
+    .cardTitle {
+      font-size: x-small;
+    }
+
+    .cardText {
+      font-size: 0.7rem;
+    }
+
+    .txt {
+      padding: 8px 10px;
+    }
+
+    .sectionTitle {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .pageSection {
+      margin-top: 16px;
+      padding-top: 14px;
+    }
+
+    .skillGrid {
+      grid-template-columns: 1fr;
+    }
+
+    .skillCategory {
+      min-height: auto;
+      padding: 10px;
+    }
+
+    .skillItems {
+      gap: 6px;
+    }
+
+    .skillItem {
+      padding: 5px 8px;
+      font-size: 0.75rem;
+    }
+  }
   
-
-}
-
-.rtxt{
-  height: 40%;
-  display: flex;
-  padding-left: 20px;
-  background-color: #13161B;
-  color: white;
-  flex-direction: column;
-}
-.rcardTtile{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  margin: 0;
-  color: hsl(0, 0, 20%);
-}
-.rcardText{
-  font-family: Arial, Helvetica, sans-serif ;
-  color: hsl(0, 0, 30%);
-  font-size: x-small;
-  margin: 0;
-}

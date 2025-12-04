@@ -1,17 +1,24 @@
 import styles from './Component.module.css'
 import githubpic from "../assets/github.png"
 import Card from "./Card.jsx"
+import profilepic from "../assets/profile.png"
+import { Link } from 'react-router-dom'
 function CardParent(props) {
     return (
         <div className={styles.homeCard}>
             <div className={styles.leftSide}>
                 <div className={styles.leftCard}>
-                    <img className={styles.pcardImage} src={props.pimage} alt={props.ptitle} />
-                                
                     <div className={styles.ptxt}>
                         <h2 className={styles.cardTitle}>{props.ptitle}</h2>
                         <p className={styles.cardText}>{props.pdesc}</p> 
                     </div>
+                                
+                    <div className={styles.photoOverlay}>
+                        <img className={styles.pcardImage} src={props.pimage} alt={props.ptitle} />
+                    </div>
+                     <Link to="/about">
+                    <button className={styles.cardButton} >About Me</button>
+                    </Link>
                 </div>
 
             </div>
