@@ -11,6 +11,8 @@ import CardParent from "./component/CardParent.jsx"
 import About from './pages/About.jsx'
 import profilepic from "./assets/profile.png"
 import banner from "./assets/banner.jpg"
+import linkedinpic from "./assets/linkedinprofile.png"
+import githubpics from "./assets/githubprofile.png"
 
 function Home(){
   return (
@@ -20,10 +22,10 @@ function Home(){
           ptitle="Profile"
           pdesc="Hi I'm Candra Wijaya, Computer Science student at BINUS University "
           pimage={profilepic}
-          limage={githubpic}
-          rimage={githubpic}
-          ltitle="git" ldesc="git is a distributed version control system."
-          rtitle="git" rdesc="git is a distributed version control system."
+          limage={linkedinpic}
+          rimage={githubpics}
+          ltitle="LinkedIn" ldesc="My LinkedIn profile to connect and network."
+          rtitle="Github" rdesc="My Github profile to see my projects."
         />
         <Language/>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './About.module.css'
-import profile from '../assets/profile.png'
+import profile from '../assets/binusprofile.png'
 
 function About(){
   return (
@@ -66,7 +66,7 @@ function About(){
           </div>
 
           <h2 className={styles.subtitle}>Contact</h2>
-          <p className={styles.contact}><a href="mailto:candra.wijaya.2010@ui.ac.id">candra.wijaya.2010@ui.ac.id</a> • <a href="https://github.com/candrawijaya" target="_blank" rel="noreferrer">GitHub</a></p>
+          <p className={styles.contact}><a href="mailto:candra.wijaya002@binus.ac.id">candra.wijaya002@binus.ac.id</a> • <a href="https://github.com/candraww" target="_blank" rel="noreferrer">GitHub</a></p>
         </div>
       </section>
     </main>

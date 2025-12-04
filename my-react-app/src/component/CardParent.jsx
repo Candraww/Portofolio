@@ -3,6 +3,7 @@ import githubpic from "../assets/github.png"
 import Card from "./Card.jsx"
 import profilepic from "../assets/profile.png"
 import { Link } from 'react-router-dom'
+
 function CardParent(props) {
     return (
         <div className={styles.homeCard}>
