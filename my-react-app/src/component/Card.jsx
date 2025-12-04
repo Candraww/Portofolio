@@ -14,6 +14,8 @@ function Card(props) {
                 <h2 className={styles.cardTitle}>{props.title}</h2>
                 <p className={styles.cardText}>{props.desc}</p>
             </div>
+            <button onClick={() => window.location.href = props.link} className={styles.cardButtons}>Live demo</button>
+          
         </div>
     );
 }

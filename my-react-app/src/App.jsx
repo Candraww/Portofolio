@@ -13,6 +13,8 @@ import profilepic from "./assets/profile.png"
 import banner from "./assets/banner.jpg"
 import linkedinpic from "./assets/Linkedinprofile.png"
 import githubpics from "./assets/githubprofile.png"
+import porto from "./assets/portowebsite.png"
+
 
 function Home(){
   return (
@@ -31,11 +33,9 @@ function Home(){
 
         <Project 
           projects={[
-            {title: "git", desc: "git is a distributed version control system.", image: githubpic},
-            {title: "git", desc: "git is a distributed version control system.", image: images},
-            {title: "git", desc: "git is a distributed version control system.", image: githubpic},
-            {title: "git", desc: "git is a distributed version control system.", image: githubpic},
-            {title: "git", desc: "git is a distributed version control system.", image: githubpic}
+            {title: "Portofolio", desc: "My personal portofolio website.", image: porto, link: "https://candra-wijaya-porto.vercel.app/"},
+            {title: "Portofolio", desc: "My personal portofolio website.", image: porto, link: "https://candra-wijaya-porto.vercel.app/"},
+       
           ]}
         />
 

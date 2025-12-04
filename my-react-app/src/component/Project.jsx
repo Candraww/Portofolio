@@ -14,6 +14,7 @@ function Project(props) {
             title={project.title} 
             desc={project.desc} 
             image={project.image} 
+            link={project.link}
           />
         ))}
       </div>
