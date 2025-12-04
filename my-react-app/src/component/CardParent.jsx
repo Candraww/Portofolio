@@ -28,22 +28,36 @@ function CardParent(props) {
                 
                 <div className={styles.rightCard}>
                     
-                    <div className={styles.firstRcard} onClick={() => window.location.href = "https://www.linkedin.com/in/candra-wijaya-c2005/"}>
+                    <div className={styles.firstRcard}>
+                         <a
+                        href="https://www.linkedin.com/in/candra-wijaya-c2005/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.noStyleLink}
+                        >
                         <img className={styles.rcardImage} src={props.limage} alt={props.ltitle} />
                                 
                         <div className={styles.rtxt}>
                             <h2 className={styles.rcardTitle}>{props.ltitle}</h2>
                             <p className={styles.rcardText}>{props.ldesc}</p> 
-                        </div>    
+                        </div>
+                        </a>    
                     </div>
 
-                    <div className={styles.secondRcard} onClick={() => window.location.href = "https://github.com/candraww"}>
+                    <div className={styles.secondRcard} >
+                       <a
+                        href="https://www.linkedin.com/in/candra-wijaya-c2005/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.noStyleLink}
+                        >
                         <img className={styles.rcardImage} src={props.rimage} alt={props.rtitle} />
                                 
                         <div className={styles.rtxt}>
                             <h2 className={styles.rcardTitle}>{props.rtitle}</h2>
                             <p className={styles.rcardText}>{props.rdesc}</p> 
                         </div>    
+                        </a>
                     </div>
                 </div>
             </div>
