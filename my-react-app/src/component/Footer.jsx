@@ -9,7 +9,7 @@ function Footer(){
                     <ul className={styles.contactList}>
                         <li><a href="https://www.linkedin.com/in/candra-wijaya-c2005/" target="_blank" rel="noreferrer">LinkedIn</a></li>
                         <li><a href="https://github.com/candraww" target="_blank" rel="noreferrer">GitHub</a></li>
-                        <li><img src="/src/assets/react.svg" alt="react logo" className={styles.footerIcon}/> candra.wijaya002@binus.ac.id</li>
+                        <li> candra.wijaya002@binus.ac.id</li>
                     </ul>
                 </div>
                 <div className={styles.copyCol}>
