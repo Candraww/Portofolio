@@ -14,7 +14,7 @@ import banner from "./assets/banner.jpg"
 import linkedinpic from "./assets/Linkedinprofile.png"
 import githubpics from "./assets/githubprofile.png"
 import porto from "./assets/portowebsite.png"
-import java from "./assets/java.png"
+import java from "./assets/javaproject.png"
 
 
 function Home(){
