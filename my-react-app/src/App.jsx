@@ -14,6 +14,7 @@ import banner from "./assets/banner.jpg"
 import linkedinpic from "./assets/Linkedinprofile.png"
 import githubpics from "./assets/githubprofile.png"
 import porto from "./assets/portowebsite.png"
+import java from "./assets/java.png"
 
 
 function Home(){
@@ -34,7 +35,7 @@ function Home(){
         <Project 
           projects={[
             {title: "Portofolio", desc: "My personal portofolio website.", image: porto, link: "https://candra-wijaya-porto.vercel.app/"},
-            {title: "Portofolio", desc: "My personal portofolio website.", image: porto, link: "https://candra-wijaya-porto.vercel.app/"},
+            {title: "Java Project", desc: " A comprehensive digital marketplace platform built with Java, featuring distinct modules for Customers, Couriers, and Administrators.", image: java, link: "https://github.com/Candraww/Java-MVC-Desktop-Application/tree/main"},
        
           ]}
         />
