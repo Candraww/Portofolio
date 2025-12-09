@@ -15,6 +15,7 @@ import linkedinpic from "./assets/Linkedinprofile.png"
 import githubpics from "./assets/githubprofile.png"
 import porto from "./assets/portowebsite.png"
 import java from "./assets/javaproject.png"
+import nutricycle from "./assets/kateringdetail1.jpg"
 
 
 function Home(){
@@ -36,7 +37,7 @@ function Home(){
           projects={[
             {title: "Portofolio", desc: "My personal portofolio website.", image: porto, link: "https://candra-wijaya-porto.vercel.app/"},
             {title: "Java Project", desc: " A comprehensive digital marketplace platform built with Java", image: java, link: "https://github.com/Candraww/Java-MVC-Desktop-Application/tree/main"},
-       
+            {title: "Nutricycle", desc: " NutriCycle adalah aplikasi mobile yang mengintegrasikan layanan pemesanan katering sehat dengan pelacakan nutrisi harian.", image: nutricycle, link: "https://github.com/Candraww/NutriCycle"},
           ]}
         />
 
