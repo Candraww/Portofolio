@@ -6,7 +6,7 @@ import Card from "./component/Card.jsx"
 import Project from "./component/Project.jsx"
 import styles from './component/Component.module.css'
 import githubpic from "./assets/github.png"
-import images from "./assets/image.png"
+
 import CardParent from "./component/CardParent.jsx"
 import About from './pages/About.jsx'
 import profilepic from "./assets/profile.png"
