@@ -35,7 +35,7 @@ function Home(){
         <Project 
           projects={[
             {title: "Portofolio", desc: "My personal portofolio website.", image: porto, link: "https://candra-wijaya-porto.vercel.app/"},
-            {title: "Java Project", desc: " A comprehensive digital marketplace platform built with Java, featuring distinct modules for Customers, Couriers, and Administrators.", image: java, link: "https://github.com/Candraww/Java-MVC-Desktop-Application/tree/main"},
+            {title: "Java Project", desc: " A comprehensive digital marketplace platform built with Java", image: java, link: "https://github.com/Candraww/Java-MVC-Desktop-Application/tree/main"},
        
           ]}
         />
