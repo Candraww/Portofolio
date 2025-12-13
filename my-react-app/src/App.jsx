@@ -37,7 +37,7 @@ function Home(){
         <Project 
           projects={[
             {title: "Portofolio", desc: "My personal portofolio website.", image: porto, link: "https://candra-wijaya-porto.vercel.app/"},
-            {title: "Java Project", desc: " A comprehensive digital marketplace platform built with Java", image: java, link: "https://github.com/Candraww/Java-MVC-Desktop-Application/tree/main"},
+            // {title: "Java Project", desc: " A comprehensive digital marketplace platform built with Java", image: java, link: "https://github.com/Candraww/Java-MVC-Desktop-Application/tree/main"},
             {title: "Nutricycle", desc: " NutriCycle adalah aplikasi mobile yang mengintegrasikan layanan pemesanan katering sehat dengan pelacakan nutrisi harian.", image: nutricycle, link: "https://github.com/Candraww/NutriCycle"},
             {title: "Jobcation", desc: "Website mencari kerja dan mencari karyawan", image: jobcation, link: "https://job-cation.vercel.app"}
           ]}
