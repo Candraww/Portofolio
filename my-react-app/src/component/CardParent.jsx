@@ -46,7 +46,7 @@ function CardParent(props) {
 
                     <div className={styles.secondRcard} >
                        <a
-                        href="https://www.linkedin.com/in/candra-wijaya-c2005/"
+                        href="https://github.com/Candraww"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.noStyleLink}
