@@ -10,7 +10,7 @@ function Header(){
                 <ul className={styles.menu}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="https://drive.google.com/file/d/1PL-UZeKukqHIfUBBpnD4RfMi9uptrFf7/view?usp=sharing" className={styles.cvBtn}>Download CV</Link></li>
+                    <li><Link to="https://drive.google.com/file/d/1ilvY_J9Ti-q6YdiqZez-NYyy--UfKD28/view?usp=sharing" className={styles.cvBtn}>Download CV</Link></li>
                 </ul>
             </nav>
         </header>
